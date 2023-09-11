@@ -6,7 +6,7 @@ setInterval(() => {
     if (__liscom_config?.detailsTitle !== true) {
         return;
     }
-    let elements = document.querySelectorAll("[data-details-title]") as HTMLElement[];
+    let elements = document.querySelectorAll("[data-details-title]") ;
     for (let e : HTMLElement of elements) {
         // if already in observedDataDetailTitle, continue
         if (observedDataDetailTitle.indexOf(e) !== -1)
