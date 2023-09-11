@@ -5,9 +5,21 @@ Interactive Site Components manageed by pure CSS.
 
 ## Contents
 
-- [Image Slider]()
+- [Slideshow]()
 - [Details Title]()
 
 
-### Image Slider
+### Slideshow
 
+```html
+<div class="slideshow">
+    <img ...>
+    <img ...>
+</div>
+```
+
+### Details Title
+
+```html
+<p data-details-title="Title">Some text epanded if title was clicked</p>
+```
