@@ -17,6 +17,6 @@ setInterval(() => {
         let summary = ka_create_element("summary", {}, [], details);
         e.parentElement.insertBefore(details, e);
         summary.append(title);
-        details.append(e);
+        details.append(e as HTMLElement);
     }
 }, 1000);
