@@ -7,7 +7,7 @@
   "sass": "./index.scss",
   "directories": {
     "doc": "docs",
-    "lib": "lib",
+    "lib": "lib"
   },
   "files": [
     "/dist",
