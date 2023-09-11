@@ -13,6 +13,8 @@ class Slideshow{
         if (isNaN(timeout))
             timeout = 5000;
 
+        console.log("register slideshow", element);
+
         element.setAttribute("data-debug-liscom-element", "slideshow");
 
         setTimeout(() => this.switch(true), 100);
@@ -44,6 +46,7 @@ class Slideshow{
 
 window.addEventListener("DOMContentLoaded", () => {
     window.setTimeout(() => {
+        console.log("Enabeld slideshow", __liscom_config);
         if (__liscom_config?.slideshow !== true) {
             return;
         }

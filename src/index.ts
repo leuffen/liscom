@@ -3,8 +3,8 @@
 export var __liscom_config : LiscomConfig = null;
 
 export class LiscomConfig {
-    slideshow: true
-    detailsTitle: true
+    public slideshow: boolean = true;
+    public detailsTitle: boolean = true;
 
 }
 
@@ -13,8 +13,11 @@ export class LiscomConfig {
  *
  * @param liscomConfig
  */
-export function liscom_enable(liscomConfig : LiscomConfig = new LiscomConfig()) {
-    __liscom_config = liscomConfig;
+export function liscom_enable(liscomConfig : LiscomConfig | any = {}) {
+    let config = new LiscomConfig();
+    config = {...config, ...liscomConfig};
+
+    __liscom_config = config;
 }
 
 
