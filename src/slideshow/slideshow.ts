@@ -14,8 +14,6 @@ class Slideshow{
         if (isNaN(timeout))
             timeout = 5000;
 
-        console.log("register slideshow", element);
-
         element.setAttribute("data-debug-liscom-element", "slideshow");
 
         setTimeout(() => this.switch(true), 100);
@@ -24,7 +22,6 @@ class Slideshow{
     }
 
     switch(first : boolean = false) {
-        console.log("switch", first);
         if (this.#curElement !== null) {
             this.#curElement.classList.add("animateOut")
             this.#curElement.classList.remove("show")
@@ -48,7 +45,6 @@ class Slideshow{
 (async() => {
     await ka_dom_ready();
     await ka_sleep(1000);
-    console.log("Enabeld slideshow", __liscom_config);
     if (__liscom_config?.slideshow !== true) {
         return;
     }
