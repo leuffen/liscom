@@ -17,6 +17,7 @@ export function liscom_enable(liscomConfig : LiscomConfig | any = {}) {
     let config = new LiscomConfig();
     config = {...config, ...liscomConfig};
 
+    console.log("liscom config", config);
     __liscom_config = config;
 }
 

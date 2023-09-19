@@ -1,4 +1,5 @@
 import {__liscom_config} from "../index";
+import {ka_dom_ready, ka_sleep} from "@kasimirjs/embed";
 
 class Slideshow{
 
@@ -44,12 +45,12 @@ class Slideshow{
     }
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-    window.setTimeout(() => {
-        console.log("Enabeld slideshow", __liscom_config);
-        if (__liscom_config?.slideshow !== true) {
-            return;
-        }
-        document.querySelectorAll(".slideshow").forEach((e) => new Slideshow(e as HTMLDivElement));
-    }, 1000);
-})
+(async() => {
+    await ka_dom_ready();
+    await ka_sleep(1000);
+    console.log("Enabeld slideshow", __liscom_config);
+    if (__liscom_config?.slideshow !== true) {
+        return;
+    }
+    document.querySelectorAll(".slideshow").forEach((e) => new Slideshow(e as HTMLDivElement));
+})();
