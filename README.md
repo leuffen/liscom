@@ -23,3 +23,6 @@ Interactive Site Components manageed by pure CSS.
 ```html
 <p data-details-title="Title">Some text epanded if title was clicked</p>
 ```
+
+
+### Loader
