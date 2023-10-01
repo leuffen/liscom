@@ -26,3 +26,16 @@ Interactive Site Components manageed by pure CSS.
 
 
 ### Loader
+
+
+### Typewriter Element
+
+```html
+  <typewriter-element
+    data-write-speed="200"
+    data-delete-speed="50"
+    data-pause-before-delete="1000"
+    data-pause-before-write="500">
+    Hallo,Welt,TypeScript,WebComponent
+  </typewriter-element>
+```
