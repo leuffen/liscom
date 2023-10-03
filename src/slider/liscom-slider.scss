@@ -1,0 +1,10 @@
+
+liscom-slider {
+
+  scroll-snap-type: both mandatory;
+  scroll-snap-stop: normal;
+  scroll-behavior: smooth;
+  &>slot>* {
+    scroll-snap-align: start;
+  }
+}

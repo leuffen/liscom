@@ -24,3 +24,5 @@ export function liscom_enable(liscomConfig : LiscomConfig | any = {}) {
 
 import "./slideshow/slideshow";
 import "./details-title/details-title";
+import "./typewriter-element/typewriter-element";
+import "./slider/liscom-slider";
