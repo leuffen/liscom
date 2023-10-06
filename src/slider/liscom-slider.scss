@@ -1,10 +1,29 @@
 
 liscom-slider {
+  &:-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
 
   scroll-snap-type: both mandatory;
   scroll-snap-stop: normal;
   scroll-behavior: smooth;
+
+
+  position: relative;
+
   &>slot>* {
     scroll-snap-align: start;
   }
+
+  .liscom-slider__indicator {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top:0;
+    bottom: 0;
+  }
+
 }

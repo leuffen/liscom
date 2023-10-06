@@ -13,7 +13,7 @@ class TypewriterElement extends HTMLElement {
     private pauseBeforeDelete: number = 1500;
     private pauseBeforeWrite: number = 500;
 
-    private curTimeout: number = null;
+    private curTimeout: any = null;
 
     constructor() {
         super();
