@@ -29,6 +29,7 @@ class Slideshow{
         }
         if (this.#curElement === null) {
             this.#curElement = this.element.firstElementChild as HTMLElement;
+            return;
         } else {
             this.#curElement = this.#curElement.nextElementSibling as HTMLElement;
             if (this.#curElement === null)

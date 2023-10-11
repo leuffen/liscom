@@ -1,0 +1,15 @@
+
+typewriter-element {
+  @keyframes liscom-blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .cursor {
+      animation: liscom-blink 1s step-end infinite;
+    }
+}
