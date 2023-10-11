@@ -1,13 +1,14 @@
 {
   "name": "@leuffen/liscom",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "sass": "./index.scss",
   "exports": {
     ".": "./dist/index.js",
-    "./loader": "./dist/loader.js"
+    "./loader": "./dist/loader.js",
+      "./*": "./"
   },
   "directories": {
     "doc": "docs",
