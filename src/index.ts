@@ -26,3 +26,4 @@ import "./slideshow/slideshow";
 import "./details-title/details-title";
 import "./typewriter-element/typewriter-element";
 import "./slider/liscom-slider";
+export * from "./loader/loader";
