@@ -34,11 +34,12 @@ class Slideshow{
             if (this.#curElement === null)
                 this.#curElement = this.element.firstElementChild as HTMLElement;
         }
-        if (! first) {
+        if (! first && this.#curElement !== null) {
             this.#curElement.classList.add("animateIn")
             this.#curElement.classList.remove("animateOut")
         }
-        this.#curElement.classList.add("show")
+        if (this.#curElement !== null)
+            this.#curElement.classList.add("show")
     }
 }
 
