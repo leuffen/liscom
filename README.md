@@ -39,3 +39,25 @@ Interactive Site Components manageed by pure CSS.
     Hallo,Welt,TypeScript,WebComponent
   </typewriter-element>
 ```
+
+
+### Scrollspy
+
+Create list of <ul><a> elements with data-scrollspy-name attribute. The name is used to find the corresponding element.
+
+```html
+
+<ul>
+    <liscom-scrollspy></liscom-scrollspy>
+</ul>
+
+
+<div data-scrollspy-name="title">Title</div>
+```
+
+
+### Scroll-to-top
+
+```html
+<liscom-scroll-to-top></liscom-scroll-to-top>
+```
