@@ -1,4 +1,4 @@
-import {ka_create_element, ka_debounce} from "@kasimirjs/embed";
+import {ka_create_element} from "@kasimirjs/embed";
 import {customElement} from "@kasimirjs/embed";
 import {ka_dom_ready} from "@kasimirjs/embed";
 
@@ -19,7 +19,7 @@ export class LiscomScrollspy extends HTMLElement {
             let curName = el.getAttribute("data-scrollspy-name");
             let navElem = ka_create_element("li", {class: ""},
                 [
-                    ka_create_element("a", {href: window.location.pathname + "#" + el.getAttribute("id")}, curName)
+                    ka_create_element("a", {href: window.location.pathname + "#" + el.getAttribute("id")}, curName as any)
                 ],
                 this
             );
