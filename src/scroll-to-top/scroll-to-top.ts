@@ -10,8 +10,6 @@ class ScrollToTop extends HTMLElement {
 
 
     connectedCallback() {
-
-        console.log("scroll to top");
         this.addEventListener("click", () => {
             window.scrollTo({top: 0, behavior: "smooth"});
         });
@@ -22,7 +20,6 @@ class ScrollToTop extends HTMLElement {
 
         window.addEventListener("scroll", async () => {
             await debounceer.debounce();
-            console.log("scroll", window.innerHeight, window.getComputedStyle(document.body).height, window.scrollY);
             if (window.scrollY > 300 && active === false) {
                 this.style.display = "block";
                 await sleep(200);
